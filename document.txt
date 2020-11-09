@@ -1,0 +1,64 @@
+// demarre serveur
+node server
+nodemon server
+npm install --save express
+npm install --save body-parser
+npm install --save mongoose
+npm install --save mongoose-unique-validator
+npm install --save bcrypt
+npm install --save jsonwebtoken
+npm install --save multer
+npm i --save shortid 
+https://openbase.io/js/shortid/documentation
+
+https://openclassrooms.com/fr/courses/4668056-construisez-des-microservices/5123020-testez-votre-api-grace-a-postman
+// Teste api 
+create user administration :
+    http://localhost:3000/api/signup
+    postman :  post - json 
+        {
+        "email": "test@gmail.com",
+        "password":"test"
+    }
+login user administration
+    http://localhost:3000/api/signup
+    postman :  post - json 
+    {
+        "email": "test@gmail.com",
+        "password":"test"
+    }
+
+    // reponse 
+    {
+        "userId": "5f9769400c4f5809bc72eb12",
+        "token": "TOKEN"
+    }
+liste product 
+    http://localhost:3000/api/product/b/
+    Get      
+create product 
+    POST - JSON 
+        http://localhost:3000/api/product/
+    {
+        "title": "product porduct",
+        "description": "product porductproduct porductproduct porductproduct porduct",
+        "imageUrl": "https://api.time.com/wp-content/uploads/2018/11/sweetfoam-sustainable-product.jpg?quality=85",
+        "price": 300
+    }
+liste customer 
+    get -  http://localhost:3000/api/customer/
+
+create customer
+    post -  http://localhost:3000/api/customer/
+   
+    {
+        "name": "test 1",
+        "address": "address address address address address",
+        "tel": "20104074",
+        "email": "test1@gmail.com",
+        "password": "test"
+    }
+liste order
+    get -  http://localhost:3000/api/order/
+Create order 
+    post -  http://localhost:3000/api/order/
