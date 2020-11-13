@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
+// admin middleware
 const auth = require('../middleware/auth');
+// client middleware
 const multer = require('../middleware/multer-config');
 
 const productCtrl = require('../controllers/product');

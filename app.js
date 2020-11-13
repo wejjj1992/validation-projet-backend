@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const productRoutes = require('./routes/product');
 const customerRoutes = require('./routes/customer');
 const orderRoutes = require('./routes/order');
-const orderDetailRoutes = require('./routes/orderDetail');
 const userRoutes = require('./routes/user');
 const path = require('path');
 
@@ -31,6 +30,5 @@ app.use('/api/user', userRoutes);
 app.use('/api/product', productRoutes);
 app.use('/api/customer', customerRoutes);
 app.use('/api/order', orderRoutes);
-app.use('/api/orderDetail', orderDetailRoutes);
 
 module.exports = app;
